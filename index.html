@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .form-group{margin: auto;}
+</style>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>jQuery Table DOM</title>
+
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+    <h2 class="text-center">Table Data</h2>
+
+    <div class="alert alert-danger alert-dismissible" role="alert" style="display: none">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>The row/s was successfully deleted!!!</strong>
+    </div>
+
+    <div class="alert alert-warning alert-dismissible" role="alert" style="display: none">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>The row/s is not selected</strong>
+    </div>
+
+    <table class="table table-striped table-hover">
+
+        <thead>
+        <tr>
+            <td>Select</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email</td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td><input type="checkbox" class="form-control" name="checkID"></td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>mark_otto@abv.bg</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>
+
+<button type="submit" class="btn btn-danger col-md-1 offset-md-1">Delete Row</button>
+
+<div class="form-group col-lg-4">
+    <label for="firstName"></label>
+    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+    <label for="lastName"></label>
+    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+    <label for="email"></label>
+    <input type="email" class="form-control" id="email" placeholder="Email"><br>
+
+    <button type="submit" class="btn btn-primary">Add Row</button>
+
+</div>
+
+<div class="alert alert-primary alert-dismissible" role="alert" style="display: none">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>The input field cannot be empty!!!</strong>
+</div>
+
+<div class="alert alert-success alert-dismissible" role="alert" style="display: none">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>The row was successfully added!!!</strong>
+</div>
+
+</body>
+</html>
